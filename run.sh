@@ -1,4 +1,8 @@
 today=`date -u "+%Y-%m-%d"`
+
+echo "Using CATEGORIES=$CATEGORIES"
+
+
 cd daily_arxiv
 scrapy crawl arxiv -o ../data/${today}.jsonl
 
